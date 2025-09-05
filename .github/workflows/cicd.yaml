@@ -28,7 +28,7 @@ jobs:
       - name: Update infra repo deployment
         run: |
           git clone https://x-access-token:${{ secrets.TOKEN }}@github.com/Dhivakarvb/devops.git infra
-          cd "infra/infra-repo/Task6/k8s"
+          cd "infra/Task6/infra-repo/k8s"
           sed -i "s|image: .*|image: ${{ secrets.DOCKER_USERNAME }}/app:latest|" deployment.yaml
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
