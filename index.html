@@ -1,8 +1,50 @@
 <!doctype html>
 <html>
-  <head><meta charset="utf-8"><title>XOps App</title></head>
+  <head>
+    <meta charset="utf-8">
+    <title>XOps App</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <style>
+      body {
+        background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+        font-family: 'Roboto', Arial, sans-serif;
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .card {
+        background: #fff;
+        border-radius: 16px;
+        box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+        padding: 2.5rem 2rem;
+        max-width: 400px;
+        text-align: center;
+      }
+      h1 {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #2d6cdf;
+        margin-bottom: 1rem;
+      }
+      p {
+        font-size: 1.1rem;
+        color: #333;
+        margin-bottom: 0;
+      }
+      .emoji {
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+        display: block;
+      }
+    </style>
+  </head>
   <body>
-    <h1>⚡XOps Microchallenge #6</h1>
-    <p>If you see this via Argo CD on kind — success! 🎉</p>
+    <div class="card">
+      <span class="emoji">⚡</span>
+      <h1>XOps Microchallenge #6</h1>
+      <p>If you see this via Argo CD on kind — <b style="color:#2d6cdf;">success! 🎉</b></p>
+    </div>
   </body>
 </html>
